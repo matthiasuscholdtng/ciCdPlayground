@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    description 'This is the description of the Pipeline'
     tools {
         nodejs 'yarn'
     }
