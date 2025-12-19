@@ -5,9 +5,10 @@ on:
   pull_request:
   workflow_dispatch:
     inputs:
-      description: 'version to tag'
-      required: true
-      type: string
+      version:
+        description: 'version to tag'
+        required: true
+        type: string
   
 permissions:
   checks: write
