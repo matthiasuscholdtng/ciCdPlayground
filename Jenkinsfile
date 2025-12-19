@@ -59,7 +59,7 @@ pipeline {
     }
 
     post{
-            steps{
+            always{
                 junit '/**/reports/**/*.xml'
             }
         }
