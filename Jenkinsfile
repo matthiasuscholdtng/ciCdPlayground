@@ -29,11 +29,7 @@ pipeline {
             }
         }
 
-        post{
-            steps{
-                junit '/**/reports/**/*.xml'
-            }
-        }
+        
 
         stage('deploy') {
             steps {
@@ -61,4 +57,10 @@ pipeline {
             }
         }
     }
+
+    post{
+            steps{
+                junit '/**/reports/**/*.xml'
+            }
+        }
 }
